@@ -1,7 +1,9 @@
 [
   {
     "name": "Oripo",
-    "animal": "fish",
+    "owner": "vspedr",
+    "type": "fish",
+    "subtype": "Betta",
     "age": "1 year",
     "description": "Eats a lot",
     "img": null
