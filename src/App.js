@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <Header as="h1" icon textAlign="center" inverted color="grey">
+          <Header as="h1" icon textAlign="center" className="App-title">
             <Icon name="paw" />
             <Header.Content>
               DeveloPets
@@ -20,7 +20,7 @@ class App extends Component {
         </header>
         <div className="App-content">
           <Container>
-            <Card.Group>
+            <Card.Group stackable>
               {petCards}
             </Card.Group>
           </Container>

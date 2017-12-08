@@ -1,5 +1,5 @@
 body: {
-  background-color: #e5e5e5;
+  background-color: #e0e9f9;
 }
 
 .App {
@@ -12,12 +12,13 @@ body: {
 }
 
 .App-header {
-  background-color: #222222;
+  background-color: #23714a;
   height: 180px;
   padding: 20px;
 }
 
-.App-title {
+.App-title * {
+  color: #fbfafa;
   font-size: 1.5em;
 }
 
