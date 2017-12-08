@@ -7,13 +7,8 @@ import { pets } from './data/pets';
 
 class App extends Component {
   render() {
-    const petCards = pets.map(pet => PetCard(pet));
+    const petCards = pets.map((pet, index) => PetCard(pet, index));
     return (
-
-      // <header className="App-header">
-      //   <img src={logo} className="App-logo" alt="logo" />
-      //   <h1 className="App-title">DeveloPets</h1>
-      // </header>
       <div className="App">
         <header className="App-header">
           <Header as="h1" icon textAlign="center" inverted color="grey">

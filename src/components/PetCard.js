@@ -1,8 +1,8 @@
 import React from 'react';
 import { Card, Icon } from 'semantic-ui-react';
 
-export const PetCard = (pet) => (
-  <Card>
+export const PetCard = (pet, index) => (
+  <Card key={index}>
     <Card.Content>
       <Card.Header>
         {pet.name}
