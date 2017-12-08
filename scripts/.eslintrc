@@ -1,0 +1,8 @@
+{
+  "extends": "react-app",
+  "rules": {
+    "no-console": [ 0 ],
+    "strict": [ 0 ],
+    "no-trailing-spaces": [ 0 ]
+  }
+}

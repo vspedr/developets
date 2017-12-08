@@ -1,11 +1,11 @@
-[
+export const pets = [
   {
     "name": "Oripo",
     "owner": "vspedr",
     "type": "fish",
     "subtype": "Betta",
     "age": "1 year",
-    "description": "Eats a lot",
+    "description": "A dark blue, almost black bubble maker. Eats a lot. Sometimes too much.",
     "img": null
-  }
-]
+  },
+];
