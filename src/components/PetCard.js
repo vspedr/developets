@@ -5,11 +5,14 @@ export const PetCard = (pet) => (
   <Card>
     <Card.Content>
       <Card.Header>
-        {`${pet.name} the ${pet.subtype} ${pet.type}`}
+        {pet.name}
       </Card.Header>
       <Card.Meta>
         <span className='age'>
-          {pet.age}
+          { pet.subtype ?
+            `the ${pet.subtype} ${pet.type}` :
+            `the ${pet.type}`
+          }
         </span>
       </Card.Meta>
       <Card.Description>
