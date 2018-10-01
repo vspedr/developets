@@ -26,4 +26,11 @@ export const pets = [
     "description": "A dark blue, almost black bubble maker. Eats a lot. Sometimes too much.",
     "img": null
   },
+  {
+    "name": "Royal",
+    "owner": "SEdilson",
+    "type": "Labrador",
+    "description": "A big brown good dog, he like's to eat everything, one day he ate my wallet.",
+    "img": null
+  }
 ];
