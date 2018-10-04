@@ -32,5 +32,19 @@ export const pets = [
     "type": "Labrador",
     "description": "A big brown good dog, he like's to eat everything, one day he ate my wallet.",
     "img": null
-  }
+  },
+  {
+    "name": "Snoke",
+    "owner": "claratersi",
+    "type": "cat",
+    "description": "Loves to be around people.",
+    "img": "https://image.ibb.co/muh5Ye/IMG_20180526_180642292_LL.jpg"
+  },
+  {
+    "name": "Ada",
+    "owner": "claratersi",
+    "type": "cat",
+    "description": "Likes to play with paper balls. Loves to eat. Anything.",
+    "img": "https://image.ibb.co/eM9r6z/ada.jpg"
+  },
 ];
