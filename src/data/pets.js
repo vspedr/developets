@@ -40,4 +40,11 @@ export const pets = [
     "description": "Likes to play with paper balls. Loves to eat. Anything.",
     "img": "https://image.ibb.co/eM9r6z/ada.jpg"
   },
+  {
+    "name": "Toinho",
+    "owner": "alinemtg",
+    "type": "parrot",
+    "description": "A parrot that likes to sing pipoca song",
+    "img": "https://ibb.co/gtQSMz"
+  }  
 ];
