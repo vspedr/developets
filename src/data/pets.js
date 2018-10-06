@@ -40,4 +40,11 @@ export const pets = [
     "description": "Likes to play with paper balls. Loves to eat. Anything.",
     "img": "https://image.ibb.co/eM9r6z/ada.jpg"
   },
+    {
+    "name": "Gandalf",
+    "owner": "irixs",
+    "type": "cat",
+    "description": "Loves your three mothers and loves sleep in the sun.",
+    "img": "https://ibb.co/e8Rnoe"
+  },
 ];
