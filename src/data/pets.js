@@ -48,6 +48,13 @@ export const pets = [
     "img": "https://image.ibb.co/eM9r6z/ada.jpg"
   },
   {
+    "name": "Bob",
+    "owner": "elrafa-sg",
+    "type": "dog",
+    "description": "Loves to bite my shoes, jump in the couch and eat french bread.",
+    "img": "https://imgur.com/a/QUxNB6u"
+  },
+  {
     "name": "Toinho",
     "owner": "alinemtg",
     "type": "parrot",
