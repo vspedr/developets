@@ -27,6 +27,13 @@ export const pets = [
     "img": null
   },
   {
+    "name": "Royal",
+    "owner": "SEdilson",
+    "type": "Labrador",
+    "description": "A big brown good dog, he like's to eat everything, one day he ate my wallet.",
+    "img": null
+  },
+  {
     "name": "Snoke",
     "owner": "claratersi",
     "type": "cat",
