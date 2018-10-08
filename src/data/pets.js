@@ -60,7 +60,7 @@ export const pets = [
     "type": "parrot",
     "description": "A parrot that likes to sing pipoca song",
     "img": "https://ibb.co/gtQSMz"
-  },  
+  },
   {
     "name": "Gandalf",
     "owner": "irixs",
