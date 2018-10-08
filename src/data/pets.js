@@ -27,6 +27,13 @@ export const pets = [
     "img": null
   },
   {
+    "name": "Royal",
+    "owner": "SEdilson",
+    "type": "Labrador",
+    "description": "A big brown good dog, he like's to eat everything, one day he ate my wallet.",
+    "img": null
+  },
+  {
     "name": "Snoke",
     "owner": "claratersi",
     "type": "cat",
@@ -46,5 +53,12 @@ export const pets = [
     "type": "parrot",
     "description": "A parrot that likes to sing pipoca song",
     "img": "https://ibb.co/gtQSMz"
-  }  
+  },  
+  {
+    "name": "Gandalf",
+    "owner": "irixs",
+    "type": "cat",
+    "description": "Loves your three mothers and loves sleep in the sun.",
+    "img": "https://ibb.co/e8Rnoe"
+  },
 ];
