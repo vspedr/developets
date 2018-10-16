@@ -69,6 +69,13 @@ export const pets = [
     "img": "https://ibb.co/e8Rnoe"
   },
   {
+    "name": "nina",
+    "owner": "danilogila",
+    "type": "cat",
+    "description": "a beautiful cat that hates strange people",
+    "img": null
+  },
+  {
     "name": "Lovey & Ms. Kitty",
     "owner": "jacobc1204",
     "type": "Cat",
