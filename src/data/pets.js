@@ -73,6 +73,6 @@ export const pets = [
     "owner": "danilogila",
     "type": "cat",
     "description": "a beautiful cat that hates strange people",
-    "img": ""
+    "img": null
   },
 ];
