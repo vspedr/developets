@@ -75,4 +75,11 @@ export const pets = [
     "description": "a beautiful cat that hates strange people",
     "img": null
   },
+  {
+    "name": "Lovey & Ms. Kitty",
+    "owner": "jacobc1204",
+    "type": "Cat",
+    "description": "Lovey is the big orange one, and he is exactly how you would expect a cat named Lovey to be. Ms. Kitty can be moody, but she never passes up a good cuddle.",
+    "img": "https://imgur.com/a/biUBHqP"
+  },
 ];
