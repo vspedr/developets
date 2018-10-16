@@ -68,4 +68,11 @@ export const pets = [
     "description": "Loves your three mothers and loves sleep in the sun.",
     "img": "https://ibb.co/e8Rnoe"
   },
+   {
+    "name": "nina",
+    "owner": "danilogila",
+    "type": "cat",
+    "description": "a beautiful cat that hates strange people",
+    "img": ""
+  },
 ];
