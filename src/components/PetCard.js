@@ -15,11 +15,17 @@ export const PetCard = (pet, index) => {
   return (
     <Card
       key={index}
-      image={pet.img || placeholder}
       header={pet.name}
-      meta={`the ${pet.type}`}
+      image={pet.img || placeholder}
+      meta={'the ${pet.type}'}
       description={pet.description}
       extra={pet.owner ? extra : null}
     />
   );
 };
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  document.querySelectorAll('img').forEach(function(img){
+    img.onerror = function(){this.src=placeholder;};
+  });
+});
