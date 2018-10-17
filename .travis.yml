@@ -9,3 +9,12 @@ script:
 
 notifications:
   email: false
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  keep-history: true
+  local-dir: build
+  github-token: $GITHUB_TOKEN
+  on:
+    branch: master
