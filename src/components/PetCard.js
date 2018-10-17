@@ -15,9 +15,9 @@ export const PetCard = (pet, index) => {
   return (
     <Card
       key={index}
-      header={pet.name}
       image={pet.img || placeholder}
-      meta={'the ${pet.type}'}
+      header={pet.name}
+      meta={`the ${pet.type}`}
       description={pet.description}
       extra={pet.owner ? extra : null}
     />
