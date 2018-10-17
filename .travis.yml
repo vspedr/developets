@@ -6,6 +6,7 @@ node_js:
 script:
   - yarn lint
   - yarn test
+  - yarn build
 
 notifications:
   email: false
