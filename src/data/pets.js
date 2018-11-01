@@ -82,4 +82,11 @@ export const pets = [
     "description": "Lovey is the big orange one, and he is exactly how you would expect a cat named Lovey to be. Ms. Kitty can be moody, but she never passes up a good cuddle.",
     "img": "https://imgur.com/a/biUBHqP"
   },
+  {
+    "name": "Ash",
+    "owner": "Juan Perez",
+    "type": "dog",
+    "description": "a grumpy old schnauzer that loves to play with her two buddies",
+    "img": null
+  }
 ];
