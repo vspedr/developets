@@ -41,6 +41,13 @@ export const pets = [
     "img": "https://image.ibb.co/muh5Ye/IMG_20180526_180642292_LL.jpg"
   },
   {
+    "name": "Wick",
+    "owner": "raphael251",
+    "type": "cat <3",
+    "description": "He makes me change my opinion about cats. I don't know if he is my son or my brother, haha",
+    "img": "https://lh3.googleusercontent.com/eOyAk64EviOSWaid7cfA1zDEg0YvfVxdZB7r8rekJt8SmDPts8u6KTEWBTNDDgLztYnMYlEoI4oF_OhIogxWlT6ivD_0rMptY-cJReu1LSzbXwJr0qoe_0BGn2i0nsJvif1DDshA6uk4knfxg7NQYCXyKOyk1MeJ__zlTTW92GEgefVNN6AxvSoQoDqn1FC_Ouxk2o1UngCXEPweIt5pPxlmHVS_WZU6BRy5NEY_0176njwHymsZSTojCw10fF_S7CyAandAoBeilYCR5qmtw6qFXTFzrXjhvTaFJ2uNZcZT9VgEt8pI0J-9aRpkQUubLrj6yQjWLQK1J4Xml0nlGJWAV1eIWLRUVhAuTeSLJhD0STrfBf4ioqXaUvmNs5YIWHE8D-XF-ObIUW4Ija-wMm0F4EbvQe4W4UdG6q0-mUTn-nRA9FcKff3wCl9OfDy3ZJkgwYicbI4Mr3721_dEQGYzGh7k_n-j4CxjLIDY7owkZn0LJuUmkdLw9G9VYWbZ0hKln6f7RJTRAQB24uW8m3y6dcuvjEpyvruMSkj1Rp6VWnBPJQjb2AqLb_vmrxTD1s9a69-9j4WYCdo7xu831-ufdnucKogQnNen-K0fvTfiuCl5ekqNjLvvRW8kHUUbmZATGHSNJ2HRI58MrLEskM5AezuOqcRTADrPWRCzQDTqQHgvdQfDY_wmZN95ZXPSZPlwk4hq_Scn_k0Ij3zzGNgK=w270-h480-no"
+  },
+  {
     "name": "Ada",
     "owner": "claratersi",
     "type": "cat",
