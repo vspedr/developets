@@ -13,6 +13,13 @@
 
 export const pets = [
   {
+    "name": "Negão",
+    "owner": "igoRmon",
+    "type": "cat",
+    "description": "He is very smart, active, a good hunter, not long ago was responsible for the birth of several other cats!",
+    "img": null
+  },
+  {
     "name": "Molly",
     "owner": "vspedr",
     "type": "poodle",
