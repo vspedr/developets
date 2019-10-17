@@ -1,0 +1,108 @@
+{
+  "pets": [
+    {
+      "id": "a792fd1e-d128-47b9-986b-0faadba69ede",
+      "name": "Negão",
+      "owner": "igoRmon",
+      "type": "cat",
+      "description": "He is very smart, active, a good hunter, not long ago was responsible for the birth of several other cats!",
+      "img": null
+    },
+    {
+      "id": "d5cfa52c-026a-4efb-b3a9-53cf21820518",
+      "name": "Molly",
+      "owner": "vspedr",
+      "type": "poodle",
+      "description": "A cute, but energetic poodle. She's now a little star in a better place.",
+      "img": "https://image.ibb.co/dz9Opb/molly.jpg"
+    },
+    {
+      "id": "2576fb20-ac6a-41c9-919e-18453d3b48d5",
+      "name": "Oripo",
+      "owner": "vspedr",
+      "type": "Betta fish",
+      "description": "A dark blue, almost black bubble maker. Eats a lot. Sometimes too much.",
+      "img": null
+    },
+    {
+      "id": "d350e1c8-9957-489c-9ba8-b07882fb383e",
+      "name": "Royal",
+      "owner": "SEdilson",
+      "type": "Labrador",
+      "description": "A big brown good dog, he like's to eat everything, one day he ate my wallet.",
+      "img": null
+    },
+    {
+      "id": "f6a61635-1ffa-4ee6-ba99-a193e0ebde99",
+      "name": "Snoke",
+      "owner": "claratersi",
+      "type": "cat",
+      "description": "Loves to be around people.",
+      "img": "https://image.ibb.co/muh5Ye/IMG_20180526_180642292_LL.jpg"
+    },
+    {
+      "id": "2eaf57e9-5276-49f0-9da6-b5ee7a6a0fb1",
+      "name": "Wick",
+      "owner": "raphael251",
+      "type": "cat <3",
+      "description": "He makes me change my opinion about cats. I don't know if he is my son or my brother, haha",
+      "img": "https://lh3.googleusercontent.com/eOyAk64EviOSWaid7cfA1zDEg0YvfVxdZB7r8rekJt8SmDPts8u6KTEWBTNDDgLztYnMYlEoI4oF_OhIogxWlT6ivD_0rMptY-cJReu1LSzbXwJr0qoe_0BGn2i0nsJvif1DDshA6uk4knfxg7NQYCXyKOyk1MeJ__zlTTW92GEgefVNN6AxvSoQoDqn1FC_Ouxk2o1UngCXEPweIt5pPxlmHVS_WZU6BRy5NEY_0176njwHymsZSTojCw10fF_S7CyAandAoBeilYCR5qmtw6qFXTFzrXjhvTaFJ2uNZcZT9VgEt8pI0J-9aRpkQUubLrj6yQjWLQK1J4Xml0nlGJWAV1eIWLRUVhAuTeSLJhD0STrfBf4ioqXaUvmNs5YIWHE8D-XF-ObIUW4Ija-wMm0F4EbvQe4W4UdG6q0-mUTn-nRA9FcKff3wCl9OfDy3ZJkgwYicbI4Mr3721_dEQGYzGh7k_n-j4CxjLIDY7owkZn0LJuUmkdLw9G9VYWbZ0hKln6f7RJTRAQB24uW8m3y6dcuvjEpyvruMSkj1Rp6VWnBPJQjb2AqLb_vmrxTD1s9a69-9j4WYCdo7xu831-ufdnucKogQnNen-K0fvTfiuCl5ekqNjLvvRW8kHUUbmZATGHSNJ2HRI58MrLEskM5AezuOqcRTADrPWRCzQDTqQHgvdQfDY_wmZN95ZXPSZPlwk4hq_Scn_k0Ij3zzGNgK=w270-h480-no"
+    },
+    {
+      "id": "b72edcc3-3a52-4d91-a856-ab7955964556",
+      "name": "Ada",
+      "owner": "claratersi",
+      "type": "cat",
+      "description": "Likes to play with paper balls. Loves to eat. Anything.",
+      "img": "https://image.ibb.co/eM9r6z/ada.jpg"
+    },
+    {
+      "id": "36673aff-cdff-427a-a189-6bfff03d6dc8",
+      "name": "Bob",
+      "owner": "elrafa-sg",
+      "type": "dog",
+      "description": "Loves to bite my shoes, jump in the couch and eat french bread.",
+      "img": "https://imgur.com/a/QUxNB6u"
+    },
+    {
+      "id": "fbd5f438-b144-416e-a0ab-219feaa7c54b",
+      "name": "Toinho",
+      "owner": "alinemtg",
+      "type": "parrot",
+      "description": "A parrot that likes to sing pipoca song",
+      "img": "https://ibb.co/gtQSMz"
+    },
+    {
+      "id": "bde1ae5d-61e0-4df1-a855-52d6250bdcaa",
+      "name": "Gandalf",
+      "owner": "irixs",
+      "type": "cat",
+      "description": "Loves your three mothers and loves sleep in the sun.",
+      "img": "https://ibb.co/e8Rnoe"
+    },
+    {
+      "id": "166455df-305e-4741-8069-3c87e0312e46",
+      "name": "nina",
+      "owner": "danilogila",
+      "type": "cat",
+      "description": "a beautiful cat that hates strange people",
+      "img": null
+    },
+    {
+      "id": "401f9dbd-43ff-40d6-9c4e-cd4127297b73",
+      "name": "Lovey & Ms. Kitty",
+      "owner": "jacobc1204",
+      "type": "Cat",
+      "description": "Lovey is the big orange one, and he is exactly how you would expect a cat named Lovey to be. Ms. Kitty can be moody, but she never passes up a good cuddle.",
+      "img": "https://imgur.com/a/biUBHqP"
+    },
+    {
+      "id": "ff67306e-39dd-4bf3-91d3-4dd41ceb6fe1",
+      "name": "Ash",
+      "owner": "Juan Perez",
+      "type": "dog",
+      "description": "a grumpy old schnauzer that loves to play with her two buddies",
+      "img": null
+    }
+  ]
+}
