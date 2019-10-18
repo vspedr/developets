@@ -1,11 +1,11 @@
 {
   "extends": "react-app",
   "rules": {
-    "indent": [ 2, 2 ],
-    "semi": [ 2, "always" ],
-    "no-trailing-spaces": [ 2 ],
-    "object-curly-spacing": [ 2, "always" ],
-    "prefer-const": [ 2, { destructuring: "all" }],
-    "no-console": [ 2 ]
+    "indent": [2, 2],
+    "semi": [2, "always"],
+    "no-trailing-spaces": [2],
+    "object-curly-spacing": [2, "always"],
+    "prefer-const": [2, { "destructuring": "all" }],
+    "no-console": [2]
   }
 }
