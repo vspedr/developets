@@ -29,6 +29,10 @@ function App() {
     fetchData();
   }, [page]);
 
+  const onPageChange = (event, data) => {
+    setPage(data.activePage);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -44,9 +48,7 @@ function App() {
       </div>
       <Pagination
         activePage={page}
-        onPageChange={(event, data) => {
-          setPage(data.activePage);
-        }}
+        onPageChange={onPageChange}
         totalPages={totalPages}
       ></Pagination>
     </div>
