@@ -111,6 +111,14 @@
       "type": "dog",
       "description": "a grumpy old schnauzer that loves to play with her two buddies",
       "img": null
+    },
+    {
+      "id": "391f3d09-5935-4204-8ae1-31843432fda7",
+      "name": "Alfredo",
+      "owner": "luisabfs",
+      "type": "cat",
+      "description": "the sweetest cat you'll ever meet. i love belly rubs and butt slaps :)",
+      "img": "https://imgur.com/aCSFPqf"
     }
   ]
 }
