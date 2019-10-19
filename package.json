@@ -30,6 +30,7 @@
     "husky": "^0.14.3",
     "jest": "20.0.4",
     "object-assign": "4.1.1",
+    "parse-link-header": "^1.0.1",
     "postcss-flexbugs-fixes": "3.2.0",
     "postcss-loader": "2.0.8",
     "promise": "8.0.1",
