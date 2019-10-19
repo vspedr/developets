@@ -46,11 +46,13 @@ function App() {
           <Card.Group stackable>{pets.map(pet => PetCard(pet))}</Card.Group>
         </Container>
       </div>
-      <Pagination
-        activePage={page}
-        onPageChange={onPageChange}
-        totalPages={totalPages}
-      ></Pagination>
+      <div className="App-pagination">
+        <Pagination
+          activePage={page}
+          onPageChange={onPageChange}
+          totalPages={totalPages}
+        ></Pagination>
+      </div>
     </div>
   );
 }
