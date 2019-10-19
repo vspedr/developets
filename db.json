@@ -1,6 +1,14 @@
 {
   "pets": [
     {
+      "id": "87fab38d-8e09-4772-8807-42c97bd5070b",
+      "name": "Kidlat",
+      "owner": "jofftiquez",
+      "type": "cat",
+      "description": "Grumpy black cat. We saved him from the streets. He was so small and sickly but he's so big and strong now. Tho, he left the house and never returned. :(",
+      "img": "https://i.imgur.com/WUIrnN6.jpg"
+    },
+    {
       "id": "a792fd1e-d128-47b9-986b-0faadba69ede",
       "name": "Negão",
       "owner": "igoRmon",
