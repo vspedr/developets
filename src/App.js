@@ -15,8 +15,12 @@ function App() {
 
   useEffect(() => {
     async function fetchData() {
+      const config = {
+        params: { _page: page, _limit: LIMIT }
+      };
       const result = await axios(
-        `${process.env.REACT_APP_API_URL}/pets?_page=${page}&_limit=${LIMIT}`
+        `${process.env.REACT_APP_API_URL}/pets`,
+        config
       );
       const parsedLink = parse(result.headers.link);
       setTotalPages(parsedLink.last._page);
