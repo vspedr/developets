@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Card, Header, Icon, Pagination } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
-import axios from 'axios';
 import parse from 'parse-link-header';
 import './App.css';
 import { PetCard } from './components/PetCard';
+import fetchPets from './services/pets';
 
 function App() {
   const LIMIT = 9;
@@ -18,10 +18,7 @@ function App() {
       const config = {
         params: { _page: page, _limit: LIMIT }
       };
-      const result = await axios(
-        `${process.env.REACT_APP_API_URL}/pets`,
-        config
-      );
+      const result = await fetchPets(config);
       const parsedLink = parse(result.headers.link);
       setTotalPages(parsedLink.last._page);
       setPets(result.data);
