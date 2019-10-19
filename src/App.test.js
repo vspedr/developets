@@ -1,8 +1,30 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { shallow } from "enzyme";
+
+import { Card, Header, Icon } from 'semantic-ui-react';
+
 import App from './App';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
+describe("App", () => {
+  it("header icon", () => {
+    const icon = <Icon />;
+
+    const wrapper = shallow(<App />);
+    expect(wrapper.containsMatchingElement(icon)).toBeTruthy();
+  });
+
+  it("header content", () => {
+    const header = <Header.Content>DeveloPets</Header.Content>;
+
+    const wrapper = shallow(<App />);
+    expect(wrapper.containsMatchingElement(header)).toBeTruthy();
+  });
+
+  it("card group", () => {
+    const group = <Card.Group />;
+
+    const wrapper = shallow(<App />);
+    expect(wrapper.containsMatchingElement(group)).toBeTruthy();
+  });
+
 });
