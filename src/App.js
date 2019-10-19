@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Card, Header, Icon } from 'semantic-ui-react';
+import { Container, Card } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 import axios from 'axios';
 import './App.css';
 import { PetCard } from './components/PetCard';
+import PetHeader from './components/Header';
 
 function App() {
   const [pets, setPets] = useState([]);
@@ -17,17 +18,14 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <Header as="h1" icon textAlign="center" className="App-title">
-          <Icon name="paw" />
-          <Header.Content>DeveloPets</Header.Content>
-        </Header>
-      </header>
-      <div className="App-content">
-        <Container>
-          <Card.Group stackable>{pets.map(pet => PetCard(pet))}</Card.Group>
-        </Container>
+    <div>
+      <PetHeader />
+      <div className="App">
+        <div className="App-content">
+          <Container className="App-container">
+            <Card.Group stackable>{pets.map(pet => PetCard(pet))}</Card.Group>
+          </Container>
+        </div>
       </div>
     </div>
   );

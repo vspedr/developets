@@ -1,4 +1,4 @@
-body: {
+body {
   background-color: #e0e9f9;
 }
 
@@ -12,14 +12,20 @@ body: {
 }
 
 .App-header {
-  background-color: #23714a;
-  height: 180px;
+  height: 160px;
   padding: 20px;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background-color: #1fc8db;
+  background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
 }
 
 .App-title * {
-  color: #fbfafa;
-  font-size: 1.5em;
+  font-size: 1em;
+  color: #fbfafa;;
+  letter-spacing: 4px;
+  font-weight: 900;
 }
 
 .App-intro {
@@ -28,6 +34,10 @@ body: {
 
 .App-content {
   padding: 20px;
+}
+
+.App-container {
+  margin: 12em;
 }
 
 @keyframes App-logo-spin {
