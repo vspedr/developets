@@ -2,6 +2,14 @@
   "pets": [
     {
       "id": "87fab38d-8e09-4772-8807-42c97bd5070b",
+      "name": "Laika",
+      "owner": "diogenespolanco",
+      "type": "dog",
+      "description": "This is our rottweiler she is already getting old and we are expecting the worst but we will always remember her. :(",
+      "img": "https://misanimales.com/wp-content/uploads/2015/01/Rottweiler.jpg"
+    },
+    {
+      "id": "87fab38d-8e09-4772-8807-42c97bd5070b",
       "name": "Kidlat",
       "owner": "jofftiquez",
       "type": "cat",
