@@ -5,7 +5,7 @@ import parse from 'parse-link-header';
 import './App.css';
 import { PetCard } from './components/PetCard';
 import fetchPets from './services/pets';
-import { cacheRequest } from './_localStorage';
+import { cacheRequest } from './_sessionStorage';
 import { PETS } from './constants';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
       const config = {
         params: { _page: page, _limit: LIMIT }
       };
-      const result = await cacheRequest(PETS, fetchPets(config));
+      const result = await cacheRequest(PETS, config.params._page, fetchPets(config));
       const parsedLink = parse(result.headers.link);
       setTotalPages(parsedLink.last._page);
       setPets(result.data);
