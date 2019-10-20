@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { usePage } from './hooks/use-page';
 import { Container, Card, Header, Icon, Pagination } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 import parse from 'parse-link-header';
@@ -12,7 +13,7 @@ function App() {
   const LIMIT = 9;
 
   const [pets, setPets] = useState([]);
-  const [page, setPage] = useState(1);
+  const [page, setPage] = usePage();
   const [totalPages, setTotalPages] = useState(1);
 
   useEffect(() => {
