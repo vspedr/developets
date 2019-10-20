@@ -15,7 +15,7 @@ export const usePage = (queryString = 'page') => {
   // ensure it is Number or else returns default value
   const value = getQueryString(queryString);
   const page = Number(value);
-  const currentPage = isNaN(page) ? 1 : page;
+  const currentPage = page && !isNaN(page) ? page : 1;
 
   return useState(currentPage);
 };
