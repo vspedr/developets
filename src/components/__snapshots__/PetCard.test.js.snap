@@ -1,3 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PetCard Snapshot 1`] = `"<div class=\\"ui card\\"><img src=\\"paw.png\\" class=\\"ui image\\"/><div class=\\"content\\"><div class=\\"meta\\">the undefined</div></div></div>"`;
+exports[`PetCard Snapshot 1`] = `"<div class=\\"ui card\\"><img src=\\"paw.png\\" class=\\"ui image card-image\\"/><div class=\\"content\\"><div class=\\"meta\\">the undefined</div></div></div>"`;

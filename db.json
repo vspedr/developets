@@ -70,7 +70,7 @@
       "owner": "elrafa-sg",
       "type": "dog",
       "description": "Loves to bite my shoes, jump in the couch and eat french bread.",
-      "img": "https://imgur.com/a/QUxNB6u"
+      "img": "https://i.imgur.com/Fj3mhoX.jpg"
     },
     {
       "id": "fbd5f438-b144-416e-a0ab-219feaa7c54b",
@@ -78,7 +78,7 @@
       "owner": "alinemtg",
       "type": "parrot",
       "description": "A parrot that likes to sing pipoca song",
-      "img": "https://ibb.co/gtQSMz"
+      "img": "https://image.ibb.co/k83E1z/Whats-App-Image-2018-10-06-at-15-40-45.jpg"
     },
     {
       "id": "bde1ae5d-61e0-4df1-a855-52d6250bdcaa",
@@ -86,7 +86,7 @@
       "owner": "irixs",
       "type": "cat",
       "description": "Loves your three mothers and loves sleep in the sun.",
-      "img": "https://ibb.co/e8Rnoe"
+      "img": "https://image.ibb.co/iWmWEK/Whats-App-Image-2018-10-06-at-15-05-44.jpg"
     },
     {
       "id": "166455df-305e-4741-8069-3c87e0312e46",
@@ -102,7 +102,7 @@
       "owner": "jacobc1204",
       "type": "Cat",
       "description": "Lovey is the big orange one, and he is exactly how you would expect a cat named Lovey to be. Ms. Kitty can be moody, but she never passes up a good cuddle.",
-      "img": "https://imgur.com/a/biUBHqP"
+      "img": "https://i.imgur.com/OXZ2lvI.jpg"
     },
     {
       "id": "ff67306e-39dd-4bf3-91d3-4dd41ceb6fe1",
@@ -111,6 +111,14 @@
       "type": "dog",
       "description": "a grumpy old schnauzer that loves to play with her two buddies",
       "img": null
+    },
+    {
+      "id": "391f3d09-5935-4204-8ae1-31843432fda7",
+      "name": "Alfredo",
+      "owner": "luisabfs",
+      "type": "cat",
+      "description": "the sweetest cat you'll ever meet. i love belly rubs and butt slaps :)",
+      "img": "https://imgur.com/aCSFPqf.jpg"
     }
   ]
 }

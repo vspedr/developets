@@ -1,0 +1,24 @@
+.card-image {
+  object-fit: cover;
+  width: 320px;
+  height: 320px;
+}
+
+.ui.card,
+.ui.cards > .card {
+  width: 320px;
+}
+
+@media only screen and (max-width: 767px) {
+  .card-image {
+    object-fit: cover;
+    width: 240px;
+    height: 240px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ui.stackable.cards > .card {
+    width: 240px !important;
+  }
+}
