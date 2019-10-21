@@ -34,7 +34,31 @@ body: {
   padding: 10px;
 }
 
+.App-search {
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.App-search > h3 > div:first-child {
+  margin: 5px 15px 0 0;
+}
+
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .App-search {
+    flex-direction: row;
+  }
+  .App-search-input {
+    width: 300px;
+  }
 }
