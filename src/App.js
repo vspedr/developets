@@ -17,7 +17,7 @@ function App() {
   const LIMIT = 9;
 
   const [pets, setPets] = useState([]);
-  const [page, setPage] = useState(1);
+  const [page, setPage] = usePage();
   const [totalPages, setTotalPages] = useState(1);
   const [searchText, setSearchText] = useState("");
 
@@ -26,7 +26,7 @@ function App() {
       const config = {
         params: { _page: page, _limit: LIMIT }
       };
-      const result = await fetchPets(config);
+      const result = await cacheRequest(PETS, config.params._page, fetchPets(config));
       const parsedLink = parse(result.headers.link);
       setTotalPages(parsedLink.last._page);
       setPets(result.data);
