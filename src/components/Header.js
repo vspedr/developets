@@ -1,7 +1,7 @@
 import React from 'react';
 import { Icon } from 'semantic-ui-react';
 
-const PetHeader = () => {
+export const PetHeader = () => {
 
   return (
     <header className="App-header">
@@ -19,5 +19,3 @@ const PetHeader = () => {
     </header>
   );
 };
-
-export default PetHeader;

@@ -4,7 +4,7 @@ import 'semantic-ui-css/semantic.min.css';
 import axios from 'axios';
 import './App.css';
 import { PetCard } from './components/PetCard';
-import PetHeader from './components/Header';
+import { PetHeader } from './components/Header';
 
 function App() {
   const [pets, setPets] = useState([]);
