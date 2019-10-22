@@ -1,14 +1,21 @@
 import React from 'react';
-import { Header, Icon,  } from 'semantic-ui-react';
+import { Icon } from 'semantic-ui-react';
 
 const PetHeader = () => {
 
   return (
     <header className="App-header">
-      <Header as="h1" icon textAlign="center" className="App-title">
-        <Icon name="paw" />
-        <Header.Content className="App-header-text">DEVELOPETS</Header.Content>
-      </Header>
+      <div className="App-header__group">
+        <span className="App-title">DeveloPets</span>
+        <span className="App-header__group-intro">
+          Introduce your animal buddies to your fellow developers
+        </span>
+      </div>
+      <div className="App__icons">
+        <Icon name="paw" size="huge" />
+        <Icon name="paw" size='big' className="App__icons--big" />
+        <Icon name="paw" size='big' />
+      </div>
     </header>
   );
 };
