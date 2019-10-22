@@ -18,14 +18,12 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className="App">
       <PetHeader />
-      <div className="App">
-        <div className="App-content">
-          <Container>
-            <Card.Group stackable>{pets.map(pet => PetCard(pet))}</Card.Group>
-          </Container>
-        </div>
+      <div className="App-content">
+        <Container>
+          <Card.Group stackable>{pets.map(pet => PetCard(pet))}</Card.Group>
+        </Container>
       </div>
     </div>
   );
