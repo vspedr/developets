@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { usePage } from './hooks/use-page';
-import { Container, Card, Header, Icon, Pagination } from 'semantic-ui-react';
+import { Container, Card, Pagination } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 import parse from 'parse-link-header';
 import './App.css';
 import { PetCard } from './components/PetCard';
+import { PetHeader } from './components/PetHeader';
 import fetchPets from './services/pets';
 import { cacheRequest } from './_sessionStorage';
 import { PETS } from './constants';
@@ -35,12 +36,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <Header as="h1" icon textAlign="center" className="App-title">
-          <Icon name="paw" />
-          <Header.Content>DeveloPets</Header.Content>
-        </Header>
-      </header>
+      <PetHeader />
       <div className="App-content">
         <Container>
           <Card.Group className="centered" stackable>{pets.map(pet => PetCard(pet))}</Card.Group>
