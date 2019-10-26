@@ -59,6 +59,10 @@ body {
   padding: 20px;
 }
 
+.App-pagination {
+  padding: 10px;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
