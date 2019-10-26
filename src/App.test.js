@@ -1,23 +1,15 @@
 import React from 'react';
 import { shallow } from "enzyme";
-
-import { Card, Header, Icon } from 'semantic-ui-react';
-
+import { Card } from 'semantic-ui-react';
 import App from './App';
+import { PetHeader } from './components/PetHeader';
 
 describe("App", () => {
-  it("header icon", () => {
-    const icon = <Icon />;
-
+  it("should contains 'Header' component", () => {
+    const header = <PetHeader />;
     const wrapper = shallow(<App />);
-    expect(wrapper.containsMatchingElement(icon)).toBeTruthy();
-  });
 
-  it("header content", () => {
-    const header = <Header.Content>DeveloPets</Header.Content>;
-
-    const wrapper = shallow(<App />);
-    expect(wrapper.containsMatchingElement(header)).toBeTruthy();
+    expect(wrapper.contains(header)).toBeTruthy();
   });
 
   it("card group", () => {

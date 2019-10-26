@@ -5,7 +5,7 @@ import 'semantic-ui-css/semantic.min.css';
 import parse from 'parse-link-header';
 import './App.css';
 import { PetCard } from './components/PetCard';
-import { PetHeader } from './components/Header';
+import { PetHeader } from './components/PetHeader';
 import fetchPets from './services/pets';
 import { cacheRequest } from './_sessionStorage';
 import { PETS } from './constants';
