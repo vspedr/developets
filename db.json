@@ -119,6 +119,14 @@
       "type": "cat",
       "description": "the sweetest cat you'll ever meet. i love belly rubs and butt slaps :)",
       "img": "https://imgur.com/aCSFPqf.jpg"
-    }
+    },
+    {
+      "id": "84ty6b38d-1809-4772-8867-42c9ghtd5070b",
+      "name": "Thor",
+      "owner": "A.M.S",
+      "type": "dog",
+      "description": "Noble and protective dog who loves kills slippers ;).",
+      "img": "https://i.ibb.co/NmLcCSY/image-dog-gif.gif"
+    },
   ]
 }
