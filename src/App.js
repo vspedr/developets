@@ -16,6 +16,7 @@ function App() {
   const [pets, setPets] = useState([]);
   const [page, setPage] = usePage();
   const [totalPages, setTotalPages] = useState(1);
+  let content, pagination;
 
   useEffect(() => {
     async function fetchData() {
@@ -34,20 +35,24 @@ function App() {
     setPage(data.activePage);
   };
 
+  if(pets.length > 0) {
+    content = <Card.Group className="centered" stackable>{pets.map(pet => PetCard(pet))}</Card.Group>;
+    pagination =  <Pagination activePage={page} onPageChange={onPageChange} totalPages={totalPages}></Pagination>;
+  } else {
+    content = <div><h1>Where are our pets ?</h1><p>It seems like these guys are playing hide and seek.<br /> They'll be back once we find them.</p></div>;
+    pagination = '';
+  }
+
   return (
     <div className="App">
       <PetHeader />
       <div className="App-content">
         <Container>
-          <Card.Group className="centered" stackable>{pets.map(pet => PetCard(pet))}</Card.Group>
+          {content}
         </Container>
       </div>
       <div className="App-pagination">
-        <Pagination
-          activePage={page}
-          onPageChange={onPageChange}
-          totalPages={totalPages}
-        ></Pagination>
+        {pagination}
       </div>
     </div>
   );
