@@ -10,6 +10,7 @@ import fetchPets from './services/pets';
 import { cacheRequest } from './_sessionStorage';
 import { PETS } from './constants';
 
+
 function App() {
   const LIMIT = 9;
 
