@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import { usePage } from './hooks/use-page';
-import { Container, Card, Pagination } from 'semantic-ui-react';
-import 'semantic-ui-css/semantic.min.css';
 import parse from 'parse-link-header';
-import './App.css';
 import { PetCard } from './components/PetCard';
 import { PetHeader } from './components/PetHeader';
 import fetchPets from './services/pets';
 import { cacheRequest } from './_sessionStorage';
 import { PETS } from './constants';
 
+import GlobalStyle from './styles/GlobalStyle';
+
+import { Container, Card, Pagination } from 'semantic-ui-react';
 
 function App() {
   const LIMIT = 9;
@@ -36,21 +36,24 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <PetHeader />
-      <div className="App-content">
-        <Container>
-          <Card.Group className="centered" stackable>{pets.map(pet => PetCard(pet))}</Card.Group>
-        </Container>
+    <Fragment>
+      <div className="App">
+        <PetHeader />
+        <div className="App-content">
+          <Container>
+            <Card.Group className="centered" stackable>{pets.map(pet => PetCard(pet))}</Card.Group>
+          </Container>
+        </div>
+        <div className="App-pagination">
+          <Pagination
+            activePage={page}
+            onPageChange={onPageChange}
+            totalPages={totalPages}
+          ></Pagination>
+        </div>
       </div>
-      <div className="App-pagination">
-        <Pagination
-          activePage={page}
-          onPageChange={onPageChange}
-          totalPages={totalPages}
-        ></Pagination>
-      </div>
-    </div>
+      <GlobalStyle />
+    </Fragment>
   );
 }
 
