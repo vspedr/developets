@@ -1,38 +1,44 @@
 import React from 'react';
-import { Card, Icon, Image } from 'semantic-ui-react';
-import placeholder from '../assets/img/paw.png';
-import './PetCard.css';
 
-export const PetCard = pet => {
-  const extra = (
-    <Card.Content extra>
-      <a href={`http://github.com/${pet.owner}`}>
-        <Icon name="github" />
-        {pet.owner}
-      </a>
-    </Card.Content>
+import {
+  Container,
+  Content,
+  Description,
+  GitHubIcon,
+  GitHubSection,
+  Owner,
+  SubTitle,
+  Thumbnail,
+  Title,
+} from '../styles/CardStyle';
+
+export const PetCard = (pet) => {
+  const { name, type, description, img, owner } = pet;
+
+  const username = (
+    owner
+      ? <Owner href={ `http://github.com/${owner}` }>{ owner }</Owner>
+      : null
   );
 
-  const image = (
-    pet.img ? <Image className="card-image" alt={pet.name} src={pet.img} /> : <Image className="card-image" alt={pet.name} src={placeholder} />
+  const thumbnail = (
+    img
+      ? <Thumbnail alt={ name } src={ img } />
+      : <Thumbnail alt={ name } />
   );
 
   return (
-    <Card
-      key={pet.id}
-      image={image}
-      header={pet.name}
-      meta={`the ${pet.type}`}
-      description={pet.description}
-      extra={pet.owner ? extra : null}
-    />
+    <Container>
+      { thumbnail }
+      <Content>
+        <Title>{ name }</Title>
+        <SubTitle>{ `the ${type}` }</SubTitle>
+        <Description>{ description }</Description>
+      </Content>
+      <GitHubSection>
+        <GitHubIcon />
+        { username }
+      </GitHubSection>
+    </Container>
   );
 };
-
-document.addEventListener('DOMContentLoaded', function(event) {
-  document.querySelectorAll('img').forEach(function(img) {
-    img.onerror = function() {
-      this.src = placeholder;
-    };
-  });
-});

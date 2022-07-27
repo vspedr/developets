@@ -5,7 +5,6 @@ const Paw = ({ className, ...props }) => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 419.14 403.6"
-      version="1.1"
       {...props}
       className={ className }
     >
