@@ -11,6 +11,7 @@ export default createGlobalStyle`
     max-height: 100vh;
     height: 100%;
     background: #e0e9f9;
+    -webkit-font-smoothing: antialiased !important;
   }
   
   *, button, input {
