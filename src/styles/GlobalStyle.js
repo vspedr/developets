@@ -17,6 +17,6 @@ export default createGlobalStyle`
   *, button, input {
     border: 0;
     outline: 0;
-    font-family: sans-serif
+    font-family: Lato, Helvetica Neue, Arial, Helvetica, sans-serif;
   }
 `;
