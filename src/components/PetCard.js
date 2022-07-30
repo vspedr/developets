@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+import placeholder from '../assets/img/paw.png';
 
 import {
   Container,
@@ -12,18 +14,19 @@ import {
   Title,
 } from '../styles/CardStyle';
 
-export const PetCard = (pet) => {
+export const PetCard = ({ pet }) => {
+  const [imageFallbackError, setImageFallbackError] = useState(false);
   const { name, type, description, img, owner } = pet;
 
-  const username = (
-    owner
-      ? <Owner href={ `http://github.com/${owner}` }>{ owner }</Owner>
-      : null
-  );
+  const imgSrc = imageFallbackError ? placeholder : img;
+
+  const handleImageError = () => {
+    setImageFallbackError(true);
+  };
 
   const thumbnail = (
     img
-      ? <Thumbnail alt={ name } src={ img } />
+      ? <Thumbnail alt={ name } src={ imgSrc } onError={ handleImageError } />
       : <Thumbnail alt={ name } />
   );
 
@@ -35,9 +38,9 @@ export const PetCard = (pet) => {
         <SubTitle>{ `the ${type}` }</SubTitle>
         <Description>{ description }</Description>
       </Content>
-      <GitHubSection>
+      <GitHubSection href={ owner ? `http://github.com/${owner}` : null }>
         <GitHubIcon />
-        { username }
+        <Owner>{ owner || null }</Owner>
       </GitHubSection>
     </Container>
   );
