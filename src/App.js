@@ -1,33 +1,50 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import { usePage } from './hooks/use-page';
 import parse from 'parse-link-header';
-import { PetCard } from './components/PetCard';
-import { PetHeader } from './components/PetHeader';
 import fetchPets from './services/pets';
 import { cacheRequest } from './_sessionStorage';
 import { PETS } from './constants';
 
+import { PetCard } from './components/PetCard';
+import { PetHeader } from './components/PetHeader';
+import { Footer } from './components/Footer';
+import { Spinner } from './components/Spinner';
+
 import GlobalStyle from './styles/GlobalStyle';
 
-import { Container, Card, Pagination } from 'semantic-ui-react';
+import { Wrapper, Container, List, Item } from './styles/AppStyle';
+
+const LIMIT = 9;
 
 function App() {
-  const LIMIT = 9;
-
   const [pets, setPets] = useState([]);
+  const [status, setStatus] = useState('iddle');
   const [page, setPage] = usePage();
   const [totalPages, setTotalPages] = useState(1);
 
   useEffect(() => {
     async function fetchData() {
-      const config = {
-        params: { _page: page, _limit: LIMIT }
-      };
-      const result = await cacheRequest(PETS, config.params._page, fetchPets(config));
-      const parsedLink = parse(result.headers.link);
-      setTotalPages(parsedLink.last._page);
-      setPets(result.data);
+      try {
+        setStatus('loading');
+
+        const config = { params: { _page: page, _limit: LIMIT } };
+
+        const result = await cacheRequest(
+          PETS,
+          config.params._page,
+          fetchPets(config)
+        );
+        const parsedLink = parse(result.headers.link);
+
+        setTotalPages(parsedLink.last._page);
+        setPets(result.data);
+
+        setStatus('success');
+      } catch (err) {
+        setStatus('error');
+      }
     }
+
     fetchData();
   }, [page]);
 
@@ -37,21 +54,29 @@ function App() {
 
   return (
     <Fragment>
-      <div className="App">
+      <Wrapper>
         <PetHeader />
-        <div className="App-content">
-          <Container>
-            <Card.Group className="centered" stackable>{pets.map(pet => PetCard(pet))}</Card.Group>
-          </Container>
-        </div>
-        <div className="App-pagination">
-          <Pagination
-            activePage={page}
-            onPageChange={onPageChange}
-            totalPages={totalPages}
-          ></Pagination>
-        </div>
-      </div>
+        <Container>
+          {status === 'success' ? (
+            <Fragment>
+              <List>
+                {pets.map((pet) => (
+                  <Item key={pet.id}>
+                    <PetCard pet={pet} />
+                  </Item>
+                ))}
+              </List>
+              <Footer
+                activePage={page}
+                onPageChange={onPageChange}
+                totalPages={totalPages}
+              />
+            </Fragment>
+          ) : (
+            <Spinner />
+          )}
+        </Container>
+      </Wrapper>
       <GlobalStyle />
     </Fragment>
   );
