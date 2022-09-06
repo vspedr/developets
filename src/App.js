@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { usePage } from './hooks/use-page';
-import { Container, Card, Pagination } from 'semantic-ui-react';
+import { Card, Container, Pagination } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 import parse from 'parse-link-header';
 import './App.css';
@@ -9,6 +9,7 @@ import { PetHeader } from './components/PetHeader';
 import fetchPets from './services/pets';
 import { cacheRequest } from './_sessionStorage';
 import { PETS } from './constants';
+import { HashLoader } from "react-spinners";
 
 function App() {
   const LIMIT = 9;
@@ -16,6 +17,7 @@ function App() {
   const [pets, setPets] = useState([]);
   const [page, setPage] = usePage();
   const [totalPages, setTotalPages] = useState(1);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchData() {
@@ -27,7 +29,8 @@ function App() {
       setTotalPages(parsedLink.last._page);
       setPets(result.data);
     }
-    fetchData();
+
+    fetchData().then(() => setLoading(false));
   }, [page]);
 
   const onPageChange = (event, data) => {
@@ -36,19 +39,32 @@ function App() {
 
   return (
     <div className="App">
-      <PetHeader />
-      <div className="App-content">
-        <Container>
-          <Card.Group className="centered" stackable>{pets.map(pet => PetCard(pet))}</Card.Group>
-        </Container>
-      </div>
-      <div className="App-pagination">
-        <Pagination
-          activePage={page}
-          onPageChange={onPageChange}
-          totalPages={totalPages}
-        ></Pagination>
-      </div>
+      <PetHeader/>
+      {
+        loading ? <HashLoader
+          color="#36d7b7"
+          cssOverride={{
+            marginTop: 100,
+            marginLeft: 'auto',
+            marginRight: 'auto'
+          }}
+          size={500}
+        /> :
+          <div>
+            <div className="App-content">
+              <Container>
+                <Card.Group className="centered" stackable>{pets.map(pet => PetCard(pet))}</Card.Group>
+              </Container>
+            </div>
+            <div className="App-pagination">
+              <Pagination
+                activePage={page}
+                onPageChange={onPageChange}
+                totalPages={totalPages}
+              ></Pagination>
+            </div>
+          </div>
+      }
     </div>
   );
 }
