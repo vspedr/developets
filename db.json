@@ -8,7 +8,7 @@
       "description": "Grumpy black cat. We saved him from the streets. He was so small and sickly but he's so big and strong now. Tho, he left the house and never returned. :(",
       "img": "https://i.imgur.com/WUIrnN6.jpg"
     },
-{
+    {
       "id": "1531b76c-7a4d-41e6-a99f-ec5801788b08",
       "name": "Princess Arya",
       "owner": "kungfumanda",
@@ -159,6 +159,14 @@
       "type": "dog",
       "description": "Essa porcariazinha não faz mal a uma pulga.",
       "img": "https://i.ibb.co/f9Kw2fB/IMG-20160816-102808847.jpg"
+    },
+    {
+      "id": "fce009e3-51d6-48bc-951a-89adb6e66310",
+      "name": "Bethânia",
+      "owner": "g-saldanha",
+      "type": "dog",
+      "description": "Cute little dog.",
+      "img": "https://imgur.com/XoOZNFV"
     }
   ]
 }
