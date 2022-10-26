@@ -38,7 +38,7 @@ export const PetCard = (pet) => {
 document.addEventListener('DOMContentLoaded', () => {
   const images = document.querySelectorAll('img');
   images.forEach((currImg) => {
-    currImg.onerror = function () {
+    currImg.onerror = () => {
       this.src = placeholder;
     };
   });
