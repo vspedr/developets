@@ -167,6 +167,14 @@
       "type": "dog",
       "description": "Cute little dog.",
       "img": "https://i.imgur.com/XoOZNFV.jpeg"
+    },
+    {
+      "id": "90dbeace-b820-4fa9-8903-3ff9e2b4f0f9",
+      "name": "Lírio & Narciso",
+      "owner": "raphaelalmeidamartins",
+      "type": "cat",
+      "description": "My little fellas. They loves to turn off my computer when I'm working",
+      "img": "https://ibb.co/FHJhSCD"
     }
   ]
 }
