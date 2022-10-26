@@ -3,7 +3,7 @@ import { Card, Icon, Image } from 'semantic-ui-react';
 import placeholder from '../assets/img/paw.png';
 import './PetCard.css';
 
-export const PetCard = pet => {
+export const PetCard = (pet) => {
   const extra = (
     <Card.Content extra>
       <a href={`http://github.com/${pet.owner}`}>
@@ -14,11 +14,17 @@ export const PetCard = pet => {
   );
 
   const image = (
-    pet.img ? <Image className="card-image" alt={pet.name} src={pet.img} /> : <Image className="card-image" alt={pet.name} src={placeholder} />
+    <Image
+      className="card-image"
+      alt={pet.name}
+      src={pet.img ? pet.img : placeholder}
+      centered
+    />
   );
 
   return (
     <Card
+      as="section"
       key={pet.id}
       image={image}
       header={pet.name}
@@ -29,9 +35,10 @@ export const PetCard = pet => {
   );
 };
 
-document.addEventListener('DOMContentLoaded', function(event) {
-  document.querySelectorAll('img').forEach(function(img) {
-    img.onerror = function() {
+document.addEventListener('DOMContentLoaded', () => {
+  const images = document.querySelectorAll('img');
+  images.forEach((currImg) => {
+    currImg.onerror = function () {
       this.src = placeholder;
     };
   });
