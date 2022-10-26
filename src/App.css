@@ -55,8 +55,12 @@ body {
   font-size: large;
 }
 
+.App main {
+  padding: 20px 0 30px;
+}
+
 .App-content {
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .App-pagination {
@@ -66,4 +70,10 @@ body {
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@media only screen and (max-width: 340px) {
+  .App-title {
+    font-size: 2em;
+  }
 }
