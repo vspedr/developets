@@ -6,10 +6,10 @@ You can add your own pets in [`/db.json`](https://github.com/vspedr/developets/b
 
 You can use the following format to add your pet
 
-```
+```json
 {
   "pets": [
-    ...
+    //...
     {
       "id": "", // generate a guid however you like
       "name": "",
@@ -18,7 +18,6 @@ You can use the following format to add your pet
       "description": "",
       "img": ""
     }
-    ...
   ]
 }
 ```
