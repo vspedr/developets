@@ -1,69 +1,94 @@
 body {
-  background-color: #e0e9f9;
+    background-color: #e0e9f9;
 }
 
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
 }
 
 .App-header {
-  display: flex;
-  justify-content: center;
-  height: 160px;
-  padding: 20px;
-  width: 100%;
-  background-color: #1fc8db;
-  background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    display: flex;
+    justify-content: center;
+    height: 160px;
+    padding: 20px;
+    width: 100%;
+    background-color: #1fc8db;
+    background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
 }
 
 .App-header__group {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 20em;
-  color: #fbfafa;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 20em;
+    color: #fbfafa;
 }
 
 .App-header__group-intro {
-  text-align: center;
-  font-size: 1.2em;
+    text-align: center;
+    font-size: 1.2em;
 }
 
 .App-title {
-  font-size: 3em;
-  align-self: center;
-  letter-spacing: 4px;
-  font-weight: 900;
+    font-size: 3em;
+    align-self: center;
+    letter-spacing: 4px;
+    font-weight: 900;
 }
 
 .App__icons {
-  display: block;
-  width: 5em;
-  color: #fbfafa;
+    display: block;
+    width: 5em;
+    color: #fbfafa;
 }
 
 .App__icons--big {
-  padding-left: 1em;
+    padding-left: 1em;
 }
 
 .App-intro {
-  font-size: large;
+    font-size: large;
 }
 
 .App-content {
-  padding: 20px;
+    padding: 20px;
 }
 
 .App-pagination {
-  padding: 10px;
+    padding: 10px;
+}
+
+.App-search {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.App-search > h3 > div:first-child {
+    margin: 5px 15px 0 0;
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .App-search {
+        flex-direction: row;
+    }
+
+    .App-search-input {
+        width: 300px;
+    }
 }
